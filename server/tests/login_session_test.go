@@ -5,8 +5,6 @@ import (
 	"database/sql"
 	"encoding/json"
 	"fmt"
-	"github.com/apex/log"
-	"github.com/stretchr/testify/suite"
 	"goapp/packages/api"
 	"goapp/packages/config"
 	"goapp/packages/db"
@@ -15,6 +13,9 @@ import (
 	"os"
 	"testing"
 	"time"
+
+	"github.com/apex/log"
+	"github.com/stretchr/testify/suite"
 )
 
 type sessionTestSuite struct {
