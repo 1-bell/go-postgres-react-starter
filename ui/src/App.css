@@ -1,8 +1,10 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+/*
   justify-content: center;
   align-items: center;
+*/
   height: 100vh;
 }
 
@@ -29,4 +31,16 @@ button {
   cursor: pointer;
   color: #fff;
   background-color: #01506f;
+}
+
+
+.logoutbtn{
+  background-color: black;
+  width: 170px;
+  height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  border-right: 10px;
+
 }

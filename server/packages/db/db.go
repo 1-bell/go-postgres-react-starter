@@ -16,8 +16,11 @@ func ConnectDB() (*sql.DB, error) {
 	user := config.Config[config.POSTGRES_USER]
 	database := config.Config[config.POSTGRES_DB]
 	host := config.Config[config.POSTGRES_SERVER_HOST]
+	password := "rkfka008!"
+	port := 5432
 
-	connString := fmt.Sprintf("postgresql://%s@%s:5432/%s?sslmode=disable", user, host, database)
+	//connString := fmt.Sprintf("postgresql://%s@%s:5432/%s?sslmode=disable", user, host, database)
+	connString := fmt.Sprintf("host=%s port=%d user=%s "+"password=%s dbname=%s sslmode=disable", host, port, user, password, database)
 
 	db, _ := sql.Open("postgres", connString)
 	if err := db.Ping(); err != nil {
@@ -40,6 +43,7 @@ func Migrate(db *sql.DB, dbName string) error {
 	}
 	m, err := migrate.NewWithDatabaseInstance(fmt.Sprintf("file://%s", dir), dbName, driver)
 	if err != nil {
+		log.Info("TEST 2")
 		return err
 	}
 

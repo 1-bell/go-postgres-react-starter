@@ -58,16 +58,22 @@ const Session = ({ history }) => {
         {isFetching ? (
           <div>fetching details...</div>
         ) : (
+          
+          
           <div>
             {user && (
               <div>
-                <h1>Welcome, {user && user.name}</h1>
+                <h1>Hello Guest, {user && user.name}</h1>
                 <p>{user && user.email}</p>
                 <br />
+                <div className="logoutbtn">
                 <button onClick={logout}>logout</button>
+                </div>
               </div>
             )}
           </div>
+
+          
         )}
 
         <Errors errors={errors} />

@@ -65,6 +65,7 @@ func InitConfig() {
 		if _, ok := Config[key]; ok {
 			Config[key] = envVal
 		}
+		log.Info(key + " :" + envVal)
 	}
 
 	log.Info("All config & secrets set")

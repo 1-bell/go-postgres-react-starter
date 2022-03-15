@@ -17,15 +17,15 @@ func StartServer() {
 	}
 	defer conn.Close()
 
-	runMigration := config.Config[config.RUN_MIGRATION]
-	dbName := config.Config[config.POSTGRES_DB]
+	// runMigration := config.Config[config.RUN_MIGRATION]
+	// dbName := config.Config[config.POSTGRES_DB]
 	port := config.Config[config.SERVER_PORT]
 
-	if runMigration == "true" && conn != nil {
-		if err := db.Migrate(conn, dbName); err != nil {
-			log.WithField("reason", err.Error()).Fatal("db migration failed")
-		}
-	}
+	// if runMigration == "true" && conn != nil {
+	// 	if err := db.Migrate(conn, dbName); err != nil {
+	// 		log.WithField("reason", err.Error()).Fatal("db migration failed")
+	// 	}
+	// }
 
 	server = httpServer(conn)
 	serverErr := server.Listen(port)
