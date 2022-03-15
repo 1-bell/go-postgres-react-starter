@@ -82,6 +82,8 @@ export default ({ history }) => {
         <a href="/register">{"create account"}</a>
         <br />
         <Errors errors={errors} />
+
+        <h3>{new Date().toLocaleTimeString()}</h3>
       </div>
     </form>
   )
