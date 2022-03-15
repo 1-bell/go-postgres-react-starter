@@ -9,9 +9,9 @@ function App() {
   return (
     <Router>
       <Route exact path="/" component={Session} />
-      <Route path="/register" component={Register} />
-      <Route path="/login" component={Login} />
-      <Route path="/session" component={Session} />
+      <Route path="/register.jsx" component={Register} />
+      <Route path="/login.jsx" component={Login} />
+      <Route path="/session.jsx" component={Session} />
     </Router>
   )
 }

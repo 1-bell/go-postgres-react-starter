@@ -52,7 +52,9 @@ export default ({ history }) => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <h1 className="t1">로그인 페이지입니다</h1>
       <div className="wrapper">
+        
         <h1>Login Page</h1>
 
         <input
@@ -81,9 +83,10 @@ export default ({ history }) => {
         <br />
         <a href="/register">{"create account"}</a>
         <br />
+        <h3>{new Date().toLocaleTimeString()}</h3>
         <Errors errors={errors} />
 
-        <h3>{new Date().toLocaleTimeString()}</h3>
+       
       </div>
     </form>
   )

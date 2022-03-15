@@ -46,7 +46,8 @@ export default ({ history }) => {
   return (
     <form onSubmit={handleSubmit}>
       <div className="wrapper">
-        <h1>Register</h1>
+        <h1>{handleChange}</h1>
+        <title>회원가입</title>
         <input
           className="input"
           type="name"

@@ -58,16 +58,17 @@ const Session = ({ history }) => {
         {isFetching ? (
           <div>fetching details...</div>
         ) : (
-          
+
           
           <div>
+            <h1>왜 바뀌지않는걸까요 정말 모르겠씁니다</h1>
             {user && (
               <div>
                 <h1>Hello Guest, {user && user.name}</h1>
                 <p>{user && user.email}</p>
                 <br />
                 <div className="logoutbtn">
-                <button onClick={logout}>logout</button>
+                <button onClick={logout}>로그아웃</button>
                 </div>
               </div>
             )}
