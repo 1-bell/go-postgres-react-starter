@@ -4,7 +4,5 @@ import App from './App'
 
 ReactDOM.render(<App />, document.getElementById('root',),)
 
-function App(){
-    return <div>hello world</div>
-    
-}
+
+

@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IsraelAdura/go-postgres-jwt-react-starter.git"
+    "url": "https://github.com/1-bell/go-postgres-react-starter.git"
   },
   "keywords": [
     "go",
@@ -30,9 +30,9 @@
   "author": "israeladura",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IsraelAdura/go-postgres-jwt-react-starter"
+    "url": "https://github.com/1-bell/go-postgres-react-starter.git"
   },
-  "homepage": "https://github.com/IsraelAdura/go-postgres-jwt-react-starter#readme",
+  "homepage": "https://github.com/1-bell/go-postgres-react-starter.git#readme",
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",

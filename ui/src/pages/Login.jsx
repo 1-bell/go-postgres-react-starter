@@ -52,7 +52,7 @@ export default ({ history }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1 className="t1">로그인 페이지입니다</h1>
+      <h1 className="wrapper">로그인 페이지입니다</h1>
       <div className="wrapper">
         
         <h1>Login Page</h1>

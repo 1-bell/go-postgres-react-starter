@@ -61,14 +61,16 @@ const Session = ({ history }) => {
 
           
           <div>
-            <h1>왜 바뀌지않는걸까요 정말 모르겠씁니다</h1>
+            <h1>적당히 하고 바뀌자 이제 못참겠다</h1>
             {user && (
               <div>
-                <h1>Hello Guest, {user && user.name}</h1>
+                <h1>Hello guest, {user && user.name}</h1>
                 <p>{user && user.email}</p>
                 <br />
                 <div className="logoutbtn">
-                <button onClick={logout}>로그아웃</button>
+                <button onClick={logout}>로그아웃</button>   
+                <h1>수정 테스트 문구입니다</h1>
+              
                 </div>
               </div>
             )}

@@ -46,3 +46,19 @@ button {
   align-content: center;
 
 }
+
+.black-nav{
+background-color: black;
+width: 100%;
+display:flex;
+color: aqua;
+padding: 20px;
+font-weight: 600;
+font-size:20px;
+}
+
+.test{
+
+text-align: center;
+
+}
